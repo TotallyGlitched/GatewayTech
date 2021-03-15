@@ -167,6 +167,21 @@ body::-webkit-scrollbar {width: 0.5rem;}
 .btn-outline-gold:not(:disabled):not(.disabled):active:focus,.show>
 .btn-outline-gold.dropdown-toggle:focus{box-shadow:0 0 0 .2rem rgba(238, 255, 0, 0.5)}
 
+.btn-outline-gold-white{color:rgb(255, 255, 255);border:2px solid rgb(255, 255, 255);}
+.btn-outline-gold-white:hover{color: goldenrod;background-color:rgb(255, 255, 255);border-color:goldenrod}
+.btn-outline-gold-white.focus,
+.btn-outline-gold-white:focus{box-shadow:0 0 0 .2rem rgba(208, 255, 0, 0.5)}
+.btn-outline-gold-white.disabled,
+.btn-outline-gold-white:disabled{color:goldenrod;background-color:transparent}
+.btn-outline-gold-white:not(:disabled):not(.disabled).active,
+.btn-outline-gold-white:not(:disabled):not(.disabled):active,.show>
+.btn-outline-gold-white.dropdown-toggle{color:#fff;background-color:goldenrod;border-color:goldenrod}
+.btn-outline-gold-white:not(:disabled):not(.disabled).active:focus,
+.btn-outline-gold-white:not(:disabled):not(.disabled):active:focus,.show>
+.btn-outline-gold-white.dropdown-toggle:focus{box-shadow:0 0 0 .2rem rgba(238, 255, 0, 0.5)}
+
+a.mail-link{color: white;}
+a.mail-link:hover{color: goldenrod;}
 
 .parallaxed { 
 	background-attachment: fixed; 
