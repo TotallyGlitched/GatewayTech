@@ -35,6 +35,10 @@
       </style>    
 
     <div class="website-home" id="main" style="margin: 0; padding:0; position: relative;">
+        
+        <div class="square">
+
+        </div>
         <div class="totop"><a href="#main" style="color: rgb(31, 31, 31);padding: 0px 4px;"><i class="fas fa-chevron-up"></i>  </a></div>
         <nav class="p-3 navbar navbar-expand-lg navbar-dark"  style="font-size: 1.25rem; background-color:black">
             <div class="container-fluid">
@@ -59,7 +63,12 @@
             </div>
         </nav>
     <!--  style="color: #272727;" -->
-        <div class="parallaxed main-tag p-5" style="height: 89vh;">
+    <div class="container-fluid">
+        <div class="video-container" style="height: 89vh;">
+            <video autoplay muted loop id="myVideo">
+                <source src="images/cover.mp4" style="width:100%" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
             <div class="row justify-content-center h-100 align-items-center text-center ">
                 <div class="col-md-5 col-sm-12">
                     <div class="card type-card">
@@ -70,13 +79,15 @@
                 </div>
             </div>          
         </div>
+    </div>
+        
         
         <hr style="border-color: white; width: 75%">
         <div id=about class="container mb-5 text-white">
             <div class="row justify-content-center align-items-center">
                 <div class="col-md-5 col-sm-12 oswald text-right">
                     <h4 class="goldentext" style="font-size: 2.5rem; font-weight: 700"> About Us</h4>
-                    We are group of like-minded SoftwareEngineers / WebDevelopers specialized in the art of building applications for clients, always prioritising their needs and requirements. We'll always build applications with the latest technology, giving our clients simple and cost effective solutions with assured quality.
+                    Gateway is a team of young and energytic innovators aspiring to provide solution to your problem. From small IT works to big Problems, our team is your one stop solution for all your IT development needs.
                 </div>
                 <div class="col-md-7 col-sm-12">
                     <table class="" style="border-color: white;">
@@ -404,6 +415,17 @@
         }
     });
 </script>
-    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.js" integrity="sha512-E378bwaeZf1nwXeJGIwTB58A5gPt5jFU3u6aTGja4ZdRFJeo/N/REKnBgNZOZlH6JdnOPO98vg2AnSGaNfCMFQ==" crossorigin="anonymous"></script>
+
+<script>
+    anime({
+        target: '.square',
+        translateX: 250,
+        rotateZ: 360,
+        scale: 3,
+        duration: 3000,
+        loop: false
+    });
+</script>
 </body>
 </html>
