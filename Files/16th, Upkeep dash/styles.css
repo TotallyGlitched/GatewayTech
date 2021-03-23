@@ -1,0 +1,143 @@
+body {
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+a:hover {text-decoration: none;}
+a {text-decoration: none;}
+
+.scroll {
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #0D5C90 black;
+}
+
+.scroll::-webkit-scrollbar {width: 0.5rem;}
+.scroll::-webkit-scrollbar-track {background: black;}
+.scroll::-webkit-scrollbar-thumb {background: #0D5C90;}
+body::-webkit-scrollbar-track {background: #1e1e24;}
+body::-webkit-scrollbar-thumb {background: #0D5C90;}
+body::-webkit-scrollbar {width: 0.5rem;}
+
+.navbar-custom {
+  position: fixed;
+  z-index: 1000;
+  background-color: #FAF3E0;
+  transition: width 200ms ease;
+}
+.main-custom{padding-left: 6vw;}
+.navbar-nav-custom {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-item-custom {width: 100%;}
+
+.nav-link-custom {
+  display: flex;
+  align-items: center;
+  height: 3.5rem;
+  color: #000000;
+  filter: grayscale(100%) opacity(0.7);
+  transition: 0.6s;
+  font-weight: 80px;
+}
+
+.link-text-custom {
+  display: none;
+  margin-left: 1rem;
+}
+
+.nav-link-custom i {
+  min-width: 2rem;
+  margin: 0 1.5rem;
+}
+
+.nav-link-custom:hover {
+  filter: grayscale(0%) opacity(1);
+  background: #9494943b;
+  color: #0D5C90;
+}
+
+.navbar-custom:hover {
+  display: block;
+}
+
+.logo-custom {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #0D5C90;
+  background: #9494943b;
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.logo-custom i {
+  transform: rotate(0deg);
+  transition: 0.6s;
+}
+
+.logo-text-custom {
+  display: inline;
+  position: absolute;
+  left: -999px;
+  transition: 0.6s;
+}
+
+.scrolled{height: 60vh;}
+
+@media only screen and (max-width: 600px) {
+  .navbar-custom {
+      bottom: 0;
+      width: 100vw;
+      height: 4rem;
+  }
+  .scroll {
+      overflow-y: hidden;
+      scrollbar-width: thin;
+  }
+  .nav-link-custom {
+      filter: grayscale(0%) opacity(1);
+  }
+  .logo-custom,
+  .link-text-custom {
+      display: none;
+  }
+  .navbar-nav-custom {
+      flex-direction: row;
+  }
+}
+
+
+/* Large screens */
+
+@media only screen and (min-width: 600px) {
+  .navbar-custom {
+      top: 0;
+      width: 6vw;
+      height: 100vh;
+  }
+  .navbar-custom:hover {
+      width: 14rem;
+  }
+  .navbar-custom:hover .link-text-custom {
+      display: inline;
+  }
+  .navbar-custom:hover .logo-custom i {
+      margin-left: 11rem;
+      transform: rotate(180deg);
+      transition: 800ms;
+      font-size: 2rem;
+  }
+  .navbar-custom:hover .logo-text-custom {
+      left: 0px;
+  }
+}

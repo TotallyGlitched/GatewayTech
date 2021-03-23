@@ -1,0 +1,111 @@
+:root{
+    --navbarcolor: #DDA05D;
+    --navbartext: #FEFAE1;
+    --navtexthover: #01AFBA;
+}
+
+
+
+body {
+    color: black;
+    background-color: var(--navbartext );
+    margin: 0;
+    padding: 0;
+  }
+  
+  a:hover{
+    text-decoration: none;
+    color: var(--navtexthover);
+    background-color: var(--navbartext);
+}
+
+  .scroll {
+    font-size: calc(5px + 2vmin);
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--navbartext) var(--navbarcolor);
+  }
+  
+  .scroll::-webkit-scrollbar {width: 0.5rem;}
+  .scroll::-webkit-scrollbar-track {background: var(--navbarcolor);}
+  .scroll::-webkit-scrollbar-thumb {background: var(--navbartext);}
+  body::-webkit-scrollbar-track {background: var(--navbarcolor);}
+  body::-webkit-scrollbar-thumb {background: var(--navbartext);}
+  body::-webkit-scrollbar {width: 0.5rem;}
+  
+  .navbar-custom {
+    position: fixed;
+    z-index:5000;
+    background-color: var(--navbarcolor);
+  }
+  
+  .navbar-nav-custom {
+    list-style: none;
+    padding: 0;
+    margin: 0;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+  
+ .nav-item-custom {
+    /* font-size: 1.2rem; */
+    width: 100%;
+    /* margin: 0 0 auto 0;  */
+  }
+.nav-item-custom:last-child {
+  margin-top: auto;
+}
+  
+  .nav-link-custom {
+    display: flex;
+    align-items: center;
+    height: 3.5rem;
+    color: var(--navbartext);
+  }
+  
+  .logo-custom
+  {
+    background-color: var(--navbarcolor);
+    width: 100%;
+  }
+
+  .nav-link-custom i {
+    min-width: 2rem;
+    margin: 0 1.5rem;
+  }
+  
+.navbar-custom:hover {
+    display: block;
+  }
+  
+  
+  
+  @media only screen and (max-width: 600px) {
+    
+    .navbar-custom {
+      top: 0;
+      width: 75vw;
+      height: 100vh;
+    }
+  .scroll{
+    scrollbar-width: thin;}
+  }
+
+
+  /* Large screens */
+  @media only screen and (min-width: 601px) {
+    .navbar-custom {
+      top: 0;
+      width: 18vw;
+      height: 100vh;
+    }
+  
+    body{padding-bottom: 5rem;}
+    /* .navbar-custom .link-text-custom {display: inline;} */
+  
+    /* .main-custom{margin-left: 5.5rem;} */
+    /* .navbar-custom .logo-text-custom{left: 0px;} */
+  
+  }

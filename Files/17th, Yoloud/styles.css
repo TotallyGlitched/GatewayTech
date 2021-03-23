@@ -1,0 +1,139 @@
+:root{
+  --navbarcolor: #DDA05D;
+  --navbartext: #FEFAE1;
+  --navtexthover: #01AFBA;
+}
+
+body {
+  color: black;
+  background-color: var(--navbartext);
+  margin: 0;
+  padding: 0;
+}
+a{text-decoration: none;}
+a:hover{
+  text-decoration: none;
+  color: var(--navtexthover);
+  background-color: var(--navbartext);
+}
+
+.user{
+  color: black; 
+  padding: 0.5rem 2rem;
+  margin: 1rem auto;
+  letter-spacing: 0.3ch;
+  font-family: 'Aladin', cursive;
+}
+
+.scroll {
+  font-size: calc(5px + 2vmin);
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--navbartext) var(--navbarcolor);
+}
+
+.scroll::-webkit-scrollbar {width: 0.5rem;}
+.scroll::-webkit-scrollbar-track {background: var(--navbarcolor);}
+.scroll::-webkit-scrollbar-thumb {background: var(--navbartext);}
+body::-webkit-scrollbar-track {background: var(--navbarcolor);}
+body::-webkit-scrollbar-thumb {background: var(--navbartext);}
+body::-webkit-scrollbar {width: 0.5rem;}
+  
+.navbar-custom {
+  position: fixed;
+  z-index:5000;
+  background-color: var(--navbarcolor);
+  transition: width 200ms ease;
+}
+
+.navbar-nav-custom {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-item-custom {
+  width: 100%;
+}
+
+.nav-item-custom:last-child {
+  margin-top: auto;
+}
+
+.nav-link-custom {
+  display: flex;
+  align-items: center;
+  height: 5vmin;
+  color: var(--navbartext);
+  transition: 0.6s;
+}
+
+.userdet{
+  padding: 2vw;
+  
+}
+
+.nav-link-custom i {
+  min-width: 2rem;
+  margin: 0 1.5rem;
+}
+
+.nav-link-custom:hover {
+  background: var(--navbartext);
+  color:  var(--navtexthover);
+  border-left: 8px solid var(--navtexthover);
+}
+
+#actived{
+  pointer-events: none;
+  background: var(--navbartext);
+  color:  var(--navtexthover);
+  border-left: 8px solid var(--navtexthover);
+}
+
+.navbar-custom:hover {
+  display: block;
+}
+.dispp{
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar-custom {
+    bottom: 0;
+    width: 80vw;
+    height: 4rem;
+  }
+
+  .dispp{
+    height: 4.5rem;
+    display: block;
+  }
+
+  .scroll{
+    overflow-y: hidden; 
+    scrollbar-width: thin;
+  }
+
+  .logo-custom, .link-text-custom {display: none;}
+  .navbar-nav-custom {flex-direction: row;}
+
+}
+
+/* Large screens */
+@media only screen and (min-width: 600px) {
+  .navbar-custom {
+    top: 0;
+    width: 20rem;
+    height: 100vh;
+  }
+
+  .nav-link-custom{font-size: calc(16px + 4 * ((50vw - 320px) / 900));}
+
+  body{padding-bottom: 5rem;  }
+
+}
