@@ -51,13 +51,12 @@ a:hover{text-decoration: none;}
 .link-items:hover{color: var(--navbarcolor); border-left: 10px solid var(--navbarcolor);} 
 .nav-links{color: var(--navtexthover);width: 100%;}
 .nav-links:hover{color: var(--navbarcolor);}
-
 .actives{border-left: 10px solid var(--navbarcolor);}
 .actives a{color: var(--navbarcolor) !important;}
 
 .user-img{
-    width: 10vw;
-    height: 10vw;
+    width: 12vw;
+    height: 12vw;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -69,7 +68,6 @@ a:hover{text-decoration: none;}
         width: 100vw;
         height: 100vh;
     }
-    
     h1, h2, h3, h4, h5, h6{font-size: 0.75em}
     .nav-links{font-size: 1rem;}
 }
@@ -79,7 +77,6 @@ a:hover{text-decoration: none;}
         font-size: 0.5rem;
         width: 20vw;
         height: 100vh;
-    }
-    
-    .main{margin: 21vw;}
+    }    
+    .main{margin-left: 20.5vw;}
 }
