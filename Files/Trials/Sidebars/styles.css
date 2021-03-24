@@ -56,8 +56,8 @@ a:hover{text-decoration: none;}
 .actives a{color: var(--navbarcolor) !important;}
 
 .user-img{
-    width: 20vw;
-    height: 20vw;
+    width: 15vw;
+    height: 15vw;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -69,7 +69,6 @@ a:hover{text-decoration: none;}
         width: 100vw;
         height: 100vh;
     }
-    .main{margin-left: 21vw;}
     
     h1, h2, h3, h4, h5, h6{font-size: 0.75em}
     .nav-links{font-size: 1rem;}
@@ -82,5 +81,5 @@ a:hover{text-decoration: none;}
         height: 100vh;
     }
     
-    .main{margin: 0vw;}
+    .main{margin: 21vw;}
 }
