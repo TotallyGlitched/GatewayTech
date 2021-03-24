@@ -47,6 +47,7 @@ a:hover{text-decoration: none;}
     font-size: 1.5rem;
 }
 
+.main{padding-top: 4rem;}
 
 .link-items:hover{color: var(--navbarcolor); border-left: 10px solid var(--navbarcolor);} 
 .nav-links{color: var(--navtexthover);width: 100%;}
@@ -78,5 +79,4 @@ a:hover{text-decoration: none;}
         width: 20vw;
         height: 100vh;
     }    
-    .main{margin-left: 20.5vw;}
 }
