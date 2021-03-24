@@ -1,9 +1,25 @@
 :root{
-    --primary:#F7F7F7;
+    --primary:#291968;
     --border-bottom: #dddddd2f;
     --accent:#D7251A;
-    --backgrnd:#291968;
+    --backgrnd:#F7F7F7;
   }
+
+  .scroll {
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--backgrnd) var(--accent);
+  }
+  
+.scroll::-webkit-scrollbar {width: 0.5rem;}
+.scroll::-webkit-scrollbar-track {background: var(--backgrnd);}
+.scroll::-webkit-scrollbar-thumb {background: var(--accent);}
+body::-webkit-scrollbar-track {background: var(--backgrnd);}
+body::-webkit-scrollbar-thumb {background: var(--accent);}
+body::-webkit-scrollbar {width: 0.5rem;}
+
+
+
 
   a{text-decoration: none;}
   a:hover{text-decoration: none;}
@@ -71,10 +87,10 @@
   @media only screen and (min-width: 601px) {
     .navbar-nav-custom {
       top: 0;
-      width: 15rem;
+      width: 17rem;
       height: 100vh;
     }
-    .main{margin-left: 16.5vw;}
+    .main{margin-left: 17.5vw;}
   
     body{padding-bottom: 5rem;}
   
