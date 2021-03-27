@@ -3,19 +3,23 @@
     --border-bottom: #dddddd2f;
     --accent:#D7251A;
     --backgrnd:#F7F7F7;
+    
+    --navbarcolor: #FEFAE1;
+    --navbartext: #DDA05D;
+    --navtexthover: #01AFBA;
   }
 
   .scroll {
     overflow: auto;
     scrollbar-width: thin;
-    scrollbar-color: var(--backgrnd) var(--accent);
+    scrollbar-color: var(--navbartext) var(--navtexthover);
   }
   
 .scroll::-webkit-scrollbar {width: 0.5rem;}
-.scroll::-webkit-scrollbar-track {background: var(--backgrnd);}
-.scroll::-webkit-scrollbar-thumb {background: var(--accent);}
-body::-webkit-scrollbar-track {background: var(--backgrnd);}
-body::-webkit-scrollbar-thumb {background: var(--accent);}
+.scroll::-webkit-scrollbar-track {background: var(--navbartext);}
+.scroll::-webkit-scrollbar-thumb {background: var(--navtexthover);}
+body::-webkit-scrollbar-track {background: var(--navbartext);}
+body::-webkit-scrollbar-thumb {background: var(--navtexthover);}
 body::-webkit-scrollbar {width: 0.5rem;}
 
 
@@ -26,7 +30,7 @@ body::-webkit-scrollbar {width: 0.5rem;}
 
   .ulres{width: 20vw;}
 
-#items, .drpdwn{color: var(--backgrnd);}
+#items, .drpdwn{color: var(--navbartext);}
 
 #items{font-size: 1.4rem;}
 
@@ -41,12 +45,12 @@ body::-webkit-scrollbar {width: 0.5rem;}
     font-size: 1rem;
 }
 
-#items:hover, .drpdwn:hover{color: var(--accent);}
+#items:hover, .drpdwn:hover{color: var(--navtexthover);}
 
 .navbar-custom {
     position: fixed;
     z-index:5000;
-    background-color: var(--primary);
+    background-color: var(--navbarcolor);
     transition: width 200ms ease;
   }
   
