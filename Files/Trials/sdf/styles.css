@@ -4,8 +4,8 @@
     --accent:#D7251A;
     --backgrnd:#F7F7F7;
     
-    --navbarcolor: #FEFAE1;
-    --navbartext: #DDA05D;
+    --navbarcolor: #5c6ae4;
+    --navbartext: #FEFAE1;
     --navtexthover: #01AFBA;
   }
 
@@ -22,9 +22,6 @@ body::-webkit-scrollbar-track {background: var(--navbartext);}
 body::-webkit-scrollbar-thumb {background: var(--navtexthover);}
 body::-webkit-scrollbar {width: 0.5rem;}
 
-
-
-
   a{text-decoration: none;}
   a:hover{text-decoration: none;}
 
@@ -39,13 +36,7 @@ body::-webkit-scrollbar {width: 0.5rem;}
     padding: 1.5rem;
 }
 
-.drpdwn{
-    border-bottom: 1px solid var(--border-bottom); 
-    left: 2rem;
-    font-size: 1rem;
-}
-
-#items:hover, .drpdwn:hover{color: var(--navtexthover);}
+#items:hover {color: var(--navtexthover);}
 
 .navbar-custom {
     position: fixed;
@@ -94,7 +85,6 @@ body::-webkit-scrollbar {width: 0.5rem;}
       width: 17rem;
       height: 100vh;
     }
-    .main{margin-left: 17.5vw;}
   
     body{padding-bottom: 5rem;}
   
