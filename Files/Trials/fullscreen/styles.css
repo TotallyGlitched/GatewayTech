@@ -1,0 +1,92 @@
+
+  .scroll {
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #f87979 #f1f1f1;
+  }
+
+.scroll::-webkit-scrollbar {width: 0.5rem;}
+.scroll::-webkit-scrollbar-track {background: #f1f1f1;}
+.scroll::-webkit-scrollbar-thumb {background: #f87979;}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0; left: 0;
+    background-color: rgba(0,0,0);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    width: 100%;
+  }
+  
+  .nav-custom{
+    right:0;
+    text-align: center;
+    list-style: none;
+  }
+
+  .nav-link-custom{
+    margin: 3rem;
+  }
+
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 26px;
+    color: #02CAF4;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: -25px;
+    right: 45px;
+    font-size: 40px;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 30px;
+    top: 5px;
+    right: 0px;
+    }
+    .nav-link-custom{margin: 0rem;}
+    .fa-md{display: none;}
+    .img-logo{width: 10rem;}
+  }
+
+  @media screen and (min-width: 651px) {
+      
+    .img-logo{
+      display: none;
+      width: 15rem;
+      position: fixed;
+      top: 40vh;
+      left: -50px;
+      transition: all ease 0.5s;
+      transform: rotate(270deg);
+    }
+    .nav-item-custom{min-width: 250px;}
+  }
+
+    /* grid https://rokkan.com/ */
+  /* .nav-custom{
+    -moz-column-count: 3;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 20px;
+    column-count: 3;
+    column-gap: 20px;
+}} */
