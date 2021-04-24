@@ -20,11 +20,14 @@
             background-size: cover;
         }
 
+        a{color: #ac6e6e;}
+        a:hover{color:black}
+
         /* .img-logo{height: 15vh} */
 
         .formm{
             background-color: rgba(255, 255, 255, 0.123);
-            padding: 2rem;
+            padding: 1.5rem;
             position: absolute;
             border-radius: 5%;
         }
@@ -35,30 +38,19 @@
             font-weight: bold;
         }
 
-        .white-box{
-            display: none;
-            border-radius: 50%;
-            position: absolute;
-            background-color: white;
-            bottom: 2vh;
-            right: 25vw;
-            box-shadow: 1px 1px 1px 2px black;
-            }
+        input{background-color: rgba(241, 245, 238, 0.952) !important;}
 
         @media only screen and (max-width: 600px){
             .formm{
-                background-color: rgba(255, 255, 255, 0.267);
+                background-color: rgba(219, 219, 219, 0.856);
+                color: black;
                 left: 10vw;
                 top: 10vh;
                 width: 80vw;
-                height: 42vh;
+                height: 55vh;
             }
 
-            .white-box{display:block}
-
-            *{font-size: calc(13px + 6 * ((100vw - 320px) / 680));}
-            /* body{background-position: right bottom;} */
-            
+            *{font-size: calc(13px + 6 * ((100vw - 320px) / 680));}            
         }
         @media only screen and (min-width: 601px) and (max-width: 790px){
             .formm{
@@ -75,11 +67,9 @@
         @media only screen and (min-width: 791px){
             .formm{
                 left: 60vw;
-                top: 50vh;
+                top: 35vh;
                 width: 28vw;
-
             }
-            body{background-size: cover;}
         }
     </style>
 
@@ -88,8 +78,8 @@
         <!-- <div class="white-box">
             <img class="img-logo" src="img/logo.png" alt="">
         </div> -->
-        <h5 class="wpos">WPOS - Sign in</h5>
-        <form class="mt-3">
+        <h5 class="wpos text-center"><img src="img/logo.png" alt="" style="height: 12vh; background-color: white; border-radius: 25%"></h5>
+        <form class="mt-4">
             <input type="email" class="mt-2 form-control" id="inputEmail3" placeholder="Email">
             <input type="password" class="mt-2 form-control" id="inputPassword3" placeholder="Password">  
 
@@ -98,9 +88,9 @@
                  <label class="form-check-label" for="invalidCheck2">Remember Me</label>
              </div>
 
-             <button type="submit" class="btn btn-outline-light mt-3" style="width:100%">SignIn</button>
+             <button type="submit" class="btn btn-outline-light mt-3" style="width:100%">Sign In</button>
          </form>
-         <div class="white-box"><img src="img/logo.png" alt="" style="height: 12vh;"></div>
+         <div class="text-muted text-center mt-3">Product of Nimbus & GatewayTech <br>For queries, contact <a href="tel:+918825867354">8825867354</a></div>
     </div>
 
 </body>
