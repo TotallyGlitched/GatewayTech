@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RealEstate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/42a48ada23.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <style>
+        body{
+            background-color: #040c2c1a;
+        }
+        .bg-darkblue{
+            background-color: #134D42;
+        }
+        .bg-hero{
+            background: url('bghero4.jpg'); 
+            height: 93vh; 
+            background-size: cover; 
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .offset-card{
+            position: absolute;
+            bottom: -20vh;            
+        }
+        .hov-red:hover{
+            color: red;
+        }
+        .hov-shadow:hover{
+            -webkit-box-shadow: 10px 10px 42px -3px rgba(0,0,0,0.57);
+            -moz-box-shadow: 10px 10px 42px -3px rgba(0,0,0,0.57);
+            box-shadow: 10px 10px 42px -3px rgba(0,0,0,0.57);
+            transition: 0.5s;
+        }
+        .img-card{
+            height: 30vh;
+            object-fit: cover;
+        }
+        .footer{
+            position: absolute;
+            bottom: 0;
+        }
+        @media only screen and (max-width:600px){
+            .offset-card{
+                top: 50vh;
+            }
+        }
+    </style>
+
+<nav class="navbar navbar-dark navbar-expand-lg bg-darkblue" id="myNavbar">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+     <p class="navbar-toggler-icon"></p>
+    </button>
+    
+    <a href="#" class="navbar-brand">RealEst</a>
+    <div class="collapse navbar-collapse" id="mainNav">
+     <ul class="navbar-nav ml-auto nav-fill">
+      <li class="nav-item px-4 dropdown">
+       <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Buy</a>
+       <div class="dropdown-menu dropdown-menu-right" aria-labelledby="servicesDropdown">
+        <a class="dropdown-item" href="#">What we can help you with?</a>
+        <div class="dropdown-divider"></div>
+        <div class="d-md-flex align-items-start justify-content-start">
+         <div>   
+          <div class="dropdown-header">Know your neighborhood</div>
+          <a class="dropdown-item" href="#">Explore</a>
+          <a class="dropdown-item" href="#">3D</a>
+          <a class="dropdown-item" href="#">Browse</a>
+         </div>
+         <div>
+          <div class="dropdown-header">Insights</div>
+          <a class="dropdown-item" href="#">Popular neighborhoods</a>
+          <a class="dropdown-item" href="#">Property Estimation</a>
+          <a class="dropdown-item" href="#">Market observations</a>
+         </div>
+         <div>
+          <div class="dropdown-header">Easy Real Estate</div>
+          <a class="dropdown-item" href="#">Buy</a>
+          <a class="dropdown-item" href="#">Sell</a>
+          <a class="dropdown-item" href="#">Rent</a>
+          <a class="dropdown-item" href="#">Mortgage</a>
+          <a class="dropdown-item" href="#">Renew</a>
+          <a class="dropdown-item" href="#">Compare</a>
+         </div>
+        </div>
+       </div>
+      </li>
+            
+      <li class="nav-item px-4 dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Rent</a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="servicesDropdown">
+         <a class="dropdown-item" href="#">What we can help you with?</a>
+         <div class="dropdown-divider"></div>
+         <div class="d-md-flex align-items-start justify-content-start">
+          <div>   
+           <div class="dropdown-header">Know your neighborhood</div>
+           <a class="dropdown-item" href="#">Explore</a>
+           <a class="dropdown-item" href="#">3D</a>
+           <a class="dropdown-item" href="#">Browse</a>
+          </div>
+          <div>
+           <div class="dropdown-header">Insights</div>
+           <a class="dropdown-item" href="#">Popular neighborhoods</a>
+           <a class="dropdown-item" href="#">Property Estimation</a>
+           <a class="dropdown-item" href="#">Market observations</a>
+          </div>
+          <div>
+           <div class="dropdown-header">Easy Real Estate</div>
+           <a class="dropdown-item" href="#">Buy</a>
+           <a class="dropdown-item" href="#">Sell</a>
+           <a class="dropdown-item" href="#">Rent</a>
+           <a class="dropdown-item" href="#">Renew</a>
+           <a class="dropdown-item" href="#">Mortgage</a>
+           <a class="dropdown-item" href="#">Compare</a>
+          </div>
+         </div>
+        </div>
+       </li>
+             
+      <li class="nav-item px-4 dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sell</a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="servicesDropdown">
+         <a class="dropdown-item" href="#">What we can help you with?</a>
+         <div class="dropdown-divider"></div>
+         <div class="d-md-flex align-items-start justify-content-start">
+          <div>   
+           <div class="dropdown-header">Know your neighborhood</div>
+           <a class="dropdown-item" href="#">Explore</a>
+           <a class="dropdown-item" href="#">3D</a>
+           <a class="dropdown-item" href="#">Browse</a>
+          </div>
+          <div>
+           <div class="dropdown-header">Insights</div>
+           <a class="dropdown-item" href="#">Popular neighborhoods</a>
+           <a class="dropdown-item" href="#">Property Estimation</a>
+           <a class="dropdown-item" href="#">Market observations</a>
+          </div>
+          <div>
+           <div class="dropdown-header">Easy Real Estate</div>
+           <a class="dropdown-item" href="#">Buy</a>
+           <a class="dropdown-item" href="#">Sell</a>
+           <a class="dropdown-item" href="#">Rent</a>
+           <a class="dropdown-item" href="#">Renew</a>
+           <a class="dropdown-item" href="#">Mortgage</a>
+           <a class="dropdown-item" href="#">Compare</a>
+          </div>
+         </div>
+        </div>
+       </li>
+
+       <li class="nav-item px-4">
+        <a href="" class="nav-link">View Saved</a>
+       </li>
+    
+      </ul>
+    </div>
+</nav>
+
+<nav class="navbar navbar-dark navbar-expand-lg bg-darkblue" id="myNavbar">
+    <div class="collapse navbar-collapse" id="mainNav">
+        <form action="" class="w-50 mx-auto">
+            <div class="input-group">
+                <input type="search" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                <button type="submit" class="btn btn-success rounded-0"><i class="fas fa-search"></i></button>
+            </div>
+        </form>
+        <ul class="navbar-nav ml-auto nav-fill">
+            <li class="nav-item px-4 dropdown">
+             <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <button type="button" class="btn btn-outline-success"><i class="fas fa-filter"></i></button>
+             </a>
+             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="servicesDropdown">
+              <div class="d-md-flex align-items-start justify-content-start">
+               <div>   
+                    <section class="m-5" filter="price">
+                        <h6 class="font-weight-bold mb-3">Price</h6>
+                    
+                        <div class="form-check pl-0 mb-3">
+                        <input
+                            price="0-25"
+                            type="radio"
+                            class="filter-option form-check-input"
+                            id="under25"
+                            name="materialExampleRadios"
+                        />
+                        <label
+                            class="form-check-label small text-uppercase card-link-secondary"
+                            for="under25"
+                            >Under $25</label
+                        >
+                        </div>
+                        <div class="form-check pl-0 mb-3">
+                        <input
+                            price="25-50"
+                            type="radio"
+                            class="filter-option form-check-input"
+                            id="2550"
+                            name="materialExampleRadios"
+                        />
+                        <label
+                            class="form-check-label small text-uppercase card-link-secondary"
+                            for="2550"
+                            >$25 to $50</label
+                        >
+                        </div>
+                        <div class="form-check pl-0 mb-3">
+                        <input
+                            price="50-100"
+                            type="radio"
+                            class="filter-option form-check-input"
+                            id="50100"
+                            name="materialExampleRadios"
+                        />
+                        <label
+                            class="form-check-label small text-uppercase card-link-secondary"
+                            for="50100"
+                            >$50 to $100</label
+                        >
+                        </div>
+                        <div class="form-check pl-0 mb-3">
+                        <input
+                            price="100-200"
+                            type="radio"
+                            class="filter-option form-check-input"
+                            id="100200"
+                            name="materialExampleRadios"
+                        />
+                        <label
+                            class="form-check-label small text-uppercase card-link-secondary"
+                            for="100200"
+                            >$100 to $200</label
+                        >
+                        </div>
+                        <div class="form-check pl-0 mb-3">
+                        <input
+                            price="200-*"
+                            type="radio"
+                            class="filter-option form-check-input"
+                            id="200above"
+                            name="materialExampleRadios"
+                        />
+                        <label
+                            class="form-check-label small text-uppercase card-link-secondary"
+                            for="200above"
+                            >$200 & Above</label
+                        >
+                        </div>
+                    </section>
+                    <section class="m-5" filter="category">
+                        <h6 class="font-weight-bold mb-3">Category</h6>
+                    </section>
+               </div>    
+              </div>
+             </div>
+            </li>
+    </div>
+</nav>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="page-footer font-small mt-5 bg-darkblue text-white">
+    <div class="container text-center text-md-left p-4">
+      <div class="row">
+        <div class="col-md-3 mx-auto">
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">About Us</h5>
+          <ul class="list-unstyled">
+            <li><a href="#!">Visit Us</a></li>
+            <li><a href="#!">About Us</a></li>
+            <li><a href="#!">Our Products</a></li>
+            <li><a href="#!">Portfolio</a></li>
+          </ul>
+        </div>
+        <hr class="clearfix w-100 d-md-none">
+        <div class="col-md-3 mx-auto">
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Hot Markets</h5>
+          <ul class="list-unstyled">
+            <li><a href="#!">Chennai</a></li>
+            <li><a href="#!">Thanjavur</a></li>
+            <li><a href="#!">Trichy</a></li>
+            <li><a href="#!">Coimbatore</a></li>
+          </ul>
+        </div>
+        <hr class="clearfix w-100 d-md-none">
+        <div class="col-md-3 mx-auto">
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Advice</h5>
+          <ul class="list-unstyled">
+            <li><a href="#!">On Buying</a></li>
+            <li><a href="#!">On Selling</a></li>
+            <li><a href="#!">On Mortgages</a></li>
+            <li><a href="#!">On Estimation</a></li>
+          </ul>
+        </div>
+        <hr class="clearfix w-100 d-md-none">
+        <div class="col-md-3 mx-auto">
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Contact Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#!">Instagram</a></li>
+            <li><a href="#!">Facebook</a></li>
+            <li><a href="#!">Twitter</a></li>
+            <li><a href="#!">Linked In</a></li>
+          </ul>
+        </div>  
+      </div>  
+    </div>
+    <div class="footer-copyright text-center py-3">© Copyright:
+      <a href="https://gatewaytech.in/"> GatewayTech</a>
+    </div>  
+  </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.js" integrity="sha512-nw7zwODD4UD9u/C/CO+03s7jXvOZDomBNFX3oOq7Xv0stAyxsxhJzVlxsRTgH3AxK3sK2ijMQou2aSIaorp19g==" crossorigin="anonymous"></script>
+</body>
+</html>

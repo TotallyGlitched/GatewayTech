@@ -1,0 +1,177 @@
+.acc-link{color: #1c7565;}
+.acc-link:hover, .acc-link:focus{text-decoration: none; color: #1c7565;}
+
+.bg-darkblue{
+    background-color: #1c7565;
+}
+
+.georgia{font-family: Georgia, 'Times New Roman', Times, serif;}
+a{color: #fff;}
+a:hover{color: #d3c531; text-decoration: none;}
+
+.search-a{color: black !important;}
+.search-a:hover{color: black;}
+
+.activee{color: #c7ba2b !important;}
+.bg-hero{
+    background: url('/storage/RealEst/bghero.jpg'); 
+    height: 91vh; 
+    background-size: cover; 
+    position: relative;
+    display: flex;
+    background-attachment: fixed;
+    justify-content: center;
+}
+.hov-red:hover{
+    color: #cec02b;
+}
+
+.spyli{float: left;}
+.spyli a{color: rgb(168, 71, 71);}
+.spyli a:hover, .spyli a:active{color: rgb(71, 168, 103);}
+
+.hov-shadow:hover{
+    -webkit-box-shadow: 5px 5px 28px -3px rgba(0,0,0,0.57);
+    -moz-box-shadow: 5px 5px 28px -3px rgba(0,0,0,0.57);
+    box-shadow: 5px 5px 28px -3px rgba(0,0,0,0.57);
+    transition: 0.5s;
+}
+.img-card{
+    height: 30vh;
+    object-fit: cover;
+}
+
+.down-t{
+    position: absolute; 
+    bottom: 0;
+    color: rgb(78, 78, 78);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3.5rem;
+    padding: 1rem;
+    border-radius: 2%;
+    background-color: rgba(255, 255, 255, 0.596);
+}
+.down-b{
+    background-color: white; 
+    color: #134d42; 
+    font-size: 2rem; 
+    padding: 0.5rem 1rem; 
+    border-radius: 50%; 
+    position: absolute; 
+    left: 50%; 
+    top: 100%;
+    margin: -2rem;
+}
+.carousel{
+    width: 100%; 
+    display:block; 
+    height:60vh;
+}
+.hov-zoom {
+    overflow: hidden; 
+    height: 100%;
+  }
+
+  .hov-zoom img {
+    transition: transform .5s ease;
+  }
+  
+  .hov-zoom:hover img {
+    transform: scale(1.5);
+  }
+.offset-card{margin: 10px;}
+
+#stage{
+    height: 15vh;
+    position:absolute;
+    top:0;
+    width: 100%;
+    background-color: white;
+}
+
+.btn-outline-green{color:#1c7565;border-color:#1c7565}
+.btn-outline-green:hover{color:#fff;background-color:#1c7565;border-color:#1c7565}
+.btn-outline-green.focus,.btn-outline-green:focus{box-shadow:0 0 0 .2rem rgba(40,167,69,.5)}
+.btn-outline-green.disabled,.btn-outline-green:disabled{color:#1c7565;background-color:transparent}
+
+.btn-outline-green:not(:disabled):not(.disabled).active,
+.btn-outline-green:not(:disabled):not(.disabled):active,
+.show>.btn-outline-green.dropdown-toggle{
+    color:#fff;background-color:#1c7565;border-color:#1c7565
+}
+
+.btn-outline-green:not(:disabled):not(.disabled).active:focus,
+.btn-outline-green:not(:disabled):not(.disabled):active:focus,
+.show>.btn-outline-green.dropdown-toggle:focus{
+    box-shadow:0 0 0 .2rem rgba(40,167,69,.5)
+}
+
+.btn-green{color:#fff;background-color:#1c7565;border-color:#1c7565}
+.btn-green:hover{color:#fff;background-color:#1c753e;border-color:#1e7e34}
+.btn-green.focus,.btn-green:focus{color:#fff;background-color:#1f751c;border-color: #1c7565;box-shadow:0 0 0 .2rem rgba(72,180,97,.5)}
+.btn-green.disabled,.btn-green:disabled{color:#fff;background-color:#1c7565;border-color:#1c7565}
+
+.btn-green:not(:disabled):not(.disabled).active,
+.btn-green:not(:disabled):not(.disabled):active,
+.show>.btn-green.dropdown-toggle{
+    color:#fff;background-color:#1e7e34;border-color:#1c7430
+}
+
+.btn-green:not(:disabled):not(.disabled).active:focus,
+.btn-green:not(:disabled):not(.disabled):active:focus,
+.show>.btn-green.dropdown-toggle:focus{
+    box-shadow:0 0 0 .2rem rgba(72,180,97,.5)
+}
+
+@media only screen and (max-width:600px){
+    .offset-card{
+        top: 5vh;
+    }
+    .carousel{
+        height: 45vh;
+    }
+}
+@media only screen and (min-width:601px) and (max-width: 770px){
+    .img-card{
+        height: 20vh;
+    }
+    .carousel{
+        height: 35vh;
+    }
+}
+
+
+.effect2
+{
+  position: relative;
+}
+.effect2:before, .effect2:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+.effect2:after
+{
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.css" integrity="sha512-Mg1KlCCytTmTBaDGnima6U63W48qG1y/PnRdYNj3nPQh3H6PVumcrKViACYJy58uQexRUrBqoADGz2p4CdmvYQ==" crossorigin="anonymous" />    
+    <script src="https://kit.fontawesome.com/42a48ada23.js" crossorigin="anonymous"></script>
+    <title>WPOS</title>
+</head> 
+<body>
+
+    <style>
+    
+    .text-custom,
+    .navbar-custom .navbar-nav li a:hover,
+    .navbar-custom .navbar-nav li a:active,
+    .navbar-custom .navbar-nav li.active a,
+    .service-box .services-icon,
+    .price-features p i,
+    .faq-icon,
+    .social .social-icon:hover {
+        color: #f6576e !important;
+    }
+    
+    .bg-custom,
+    .btn-custom,
+    .timeline-page .timeline-item .date-label-left::after,
+    .timeline-page .timeline-item .duration-right::after,.back-to-top:hover {
+        background-color: #f6576e;
+    }
+    
+    .btn-custom,
+    .custom-form .form-control:focus,
+    .social .social-icon:hover,
+    .registration-input-box:focus {
+        border-color: #f6576e;
+    }
+    
+    .service-box .services-icon,
+    .price-features p i {
+        background-color: rgba(246, 87, 110, 0.1);
+    }
+    
+    .btn-custom:hover,
+    .btn-custom:focus,
+    .btn-custom:active,
+    .btn-custom.active,
+    .btn-custom.focus,
+    .btn-custom:active,
+    .btn-custom:focus,
+    .btn-custom:hover,
+    .open > .dropdown-toggle.btn-custom {
+        border-color: #e45267;
+        background-color: #e45267;
+    }
+    
+    .price-features p i {
+        height: 20px;
+        width: 20px;
+        display: inline-block;
+        text-align: center;
+        line-height: 20px;
+        font-size: 14px;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+
+
+
+
+
+
+
+      *{
+          font-size: 15px;
+          font-family: Impact, 'Arial Narrow Bold', sans-serif;
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+        }
+
+        a{color: white;}
+        a:hover{color: #F0B749; text-decoration: none;}
+        .active{color: #F0B749 !important;}
+
+        .btn-trial{
+            color: white;
+            font-size: smaller;
+        }
+
+        .wpos::before, .wpos::after {
+            display: inline-block;
+            content: "";
+            margin: 0 1rem;
+            transform: translateY(-1rem);
+        }
+        .bg-hero{
+            background: url(win2.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            height: 90vh;
+            position: relative;
+        }
+
+        .overlay{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 30;
+            display: flex;
+            justify-content: center;
+            padding-top: 2rem;
+            color: rgb(112, 112, 112);
+            background-color: rgba(247, 240, 240, 0.075);
+        }
+
+        ul{
+            padding: 0;
+            list-style: none;
+        }
+
+        .circ{
+            background-color: #fff;
+            color: #9e6f11;
+            border-radius: 50%;
+            padding: 0.75rem;
+        }
+
+        .circ2{
+            background-color: #8F4068;
+            color: #F0B749;
+            border-radius: 50%;
+            margin: 1rem;
+        }
+        .footer{
+            background-color: #8F4068;
+            padding: 2rem;
+        }
+
+        .checkk{margin: 1rem}
+      
+        .checkk:before {
+          font-family: "Font Awesome";
+          content: '\f00c';
+          color: #8F4068;
+        }
+        .main-foot{color: #F0B749;}
+        .inline{display: inline;}
+
+        @media only screen and (max-width: 768px)
+        {
+            *{font-size: 13px;}
+            .wpos::after, .wpos::before{
+                width:20vw;
+                border-top: .1rem solid rgb(112, 112, 112);
+            }
+            .circ2{
+              padding: 2rem;
+              font-size: 3rem;
+            }
+        }
+
+        @media only screen and (min-width: 769px){
+            .wpos::before, .wpos::after{
+                width: 40vw;
+                border-top: .2rem solid rgb(112, 112, 112);
+            }
+            .circ2{
+              padding: 3rem;
+              font-size: 4rem;
+            }
+        }
+    </style>
+
+
+    <nav class="navbar navbar-expand-md" style="background-color: #8F4068;">
+        <a class="navbar-brand" href="#"><img src="logo.png" style="background-color:white; border-radius: 50%; height:7vh" alt=""></a>
+        <button style="color: white;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Overview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Why Us?</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Pricing</a>
+            </li>
+          </ul>
+          <div class="btn btn-outline-warning btn-trial">FREE trial</div>
+        </div>
+    </nav>
+    
+    <div class="container text-center">
+      <h3 class="mt-5">WPOS Pricing Plans</h3>
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-4 col-sm-12">
+          <div class="p-4 card shadow">
+            <h2>Solo</h2>
+            <ul class="text-left" style="padding: 0; list-style:none;">
+              <li class="checkk">Shipping Integration</li>
+              <li class="checkk">PoS Mobile App</li>
+              <li class="checkk">Payment Gateway Integration</li>
+              <li class="checkk">e-Commerce</li>
+              <li class="checkk">Ledger Maintanence</li>
+              <li class="checkk">Stock Management</li>
+              <li class="checkk">Accounts</li>
+              <li class="checkk">Dashboard</li>
+            </ul>
+            <div class="btn btn-outline-danger m-3">Get Started</div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="p-4 card shadow">
+            <h2>Winery</h2>
+            <ul class="text-left" style="padding: 0; list-style:none;">
+              <li class="checkk">Shipping Integration</li>
+              <li class="checkk">PoS Mobile App</li>
+              <li class="checkk">Payment Gateway Integration</li>
+              <li class="checkk">e-Commerce</li>
+              <li class="checkk">Ledger Maintanence</li>
+              <li class="checkk">Stock Management</li>
+              <li class="checkk">Accounts</li>
+              <li class="checkk">Dashboard</li>
+            </ul>
+            <div class="btn btn-outline-danger m-3">Get Started</div>
+          </div>  
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="p-4 card shadow">
+            <h2>Organisation</h2>
+            <ul class="text-left" style="padding: 0; list-style:none;">
+              <li class="checkk">Shipping Integration</li>
+              <li class="checkk">PoS Mobile App</li>
+              <li class="checkk">Payment Gateway Integration</li>
+              <li class="checkk">e-Commerce</li>
+              <li class="checkk">Ledger Maintanence</li>
+              <li class="checkk">Stock Management</li>
+              <li class="checkk">Accounts</li>
+              <li class="checkk">Dashboard</li>
+            </ul>
+            <div class="btn btn-outline-danger m-3">Get Started</div>
+          </div>  
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="footer container-fluid">
+        <div class="row mx-auto w-75">
+            <div class="col-md-4 col-sm-12">
+                <p class="main-foot">About company</p>
+                <ul>
+                    <li><a href="" class="foot-link">Visit Us</a></li>
+                    <li><a href="" class="foot-link">About Us</a></li>
+                    <li><a href="" class="foot-link">Our Products</a></li>
+                    <li><a href="" class="foot-link">Blog</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <p class="main-foot">About Product</p>
+                <ul>
+                    <li><a href="" class="foot-link">Features</a></li>
+                    <li><a href="" class="foot-link">Benefits</a></li>
+                    <li><a href="" class="foot-link">Pricing</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <p class="main-foot">Contact Us</p>
+                <ul>
+                    <li class="inline"><a href="" class="foot-link"><i class="fab fa-linkedin-in circ"></i></a></li>
+                    <li class="inline"><a href="" class="foot-link"><i class="fab fa-linkedin-in circ"></i></a></li>
+                    <li class="inline"><a href="" class="foot-link"><i class="fab fa-linkedin-in circ"></i></a></li>
+                    <li class="inline"><a href="" class="foot-link"><i class="fab fa-linkedin-in circ"></i></a></li>
+                </ul>
+          </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.js" integrity="sha512-nw7zwODD4UD9u/C/CO+03s7jXvOZDomBNFX3oOq7Xv0stAyxsxhJzVlxsRTgH3AxK3sK2ijMQou2aSIaorp19g==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous"></script>
+</body>
+</html>
