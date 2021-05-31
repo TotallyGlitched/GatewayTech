@@ -100,6 +100,12 @@ html {scroll-behavior: smooth;}
   background-attachment: fixed;
   background-size: contain;
 }
+.h-nav{
+  position: sticky !important; 
+  top: 0; 
+  z-index: 2000; 
+  background-color:#c4e4c4;
+}
 
 @media only screen and (max-width: 650px){
     table{font-size: 11px;}
@@ -107,6 +113,7 @@ html {scroll-behavior: smooth;}
       left: 5%;
       width: 90%;
     }
+  .h-nav{height: 8vh;}
   .headd{top: 8vh;}
   .h-fix{height: 100%;}
 }
@@ -118,6 +125,8 @@ html {scroll-behavior: smooth;}
   top: 25%;
   right: -30%;
 }
+.h-nav{height: 5vh;}
+
 .headd{top: 5vh;}
 .h-fix{height: 90vh;}
 }
@@ -129,6 +138,7 @@ html {scroll-behavior: smooth;}
     right: -70%;
     width: 50%;
   }
+  .h-nav{height: 8.5vh;}
   .h-fix{height: 90vh;}
   .headd{top: 8.5vh;}
 
