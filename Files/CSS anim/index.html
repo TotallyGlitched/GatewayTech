@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" />
+
+    <style>
+.rain{
+    transform: rotate(90deg);
+    animation: rainn 1s;
+}
+@keyframes rainn{
+    from{
+        transform: translateY(0) rotate(90deg);
+    }
+    to{
+        transform: translateY(500px) rotate(90deg);
+    }
+}
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <hr style="border: 4px solid black;" class="rain w-25">
+    </div>
+</body>
+</html>

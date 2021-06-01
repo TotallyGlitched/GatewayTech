@@ -113,33 +113,30 @@ html {scroll-behavior: smooth;}
       left: 5%;
       width: 90%;
     }
-  .h-nav{height: 8vh;}
-  .headd{top: 8vh;}
+  .headd{top: 5vh;}
   .h-fix{height: 100%;}
 }
 
-@media only screen and (min-width: 651px) and (max-width: 770px){
+@media only screen and (min-width: 651px) and (max-width: 835px){
 .con-c{
   width: 90%;
   position: absolute;
   top: 25%;
   right: -30%;
 }
-.h-nav{height: 5vh;}
 
-.headd{top: 5vh;}
+.headd{top: 4.5vh;}
 .h-fix{height: 90vh;}
 }
 
-@media only screen and (min-width: 771px){
+@media only screen and (min-width: 836px){
   .con-c{
     position: absolute;
     top: 12%;
     right: -70%;
     width: 50%;
   }
-  .h-nav{height: 8.5vh;}
   .h-fix{height: 90vh;}
-  .headd{top: 8.5vh;}
+  .headd{top: 7vh;}
 
   }

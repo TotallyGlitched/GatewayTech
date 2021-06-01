@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/42a48ada23.js" crossorigin="anonymous"></script>
+
 </head>
 
 <style>
@@ -20,7 +23,29 @@
         align-items: center;
         background-color: #fff;
     }
-    
+    .pin-container {
+        column-gap: 15px;
+       }
+    .pin-item {
+        display: inline-block;
+        width: 100%;
+       }
+    .pin-item img {
+        display:block;
+        width: 100%;
+       }
+       @media only screen and (max-width:600px){
+        .pin-container{column-count: 1;}
+       }
+
+       @media only screen and (min-width:601px) and (max-width: 772px){
+        .pin-container{column-count: 3;}
+       }
+       
+       @media only screen and (min-width:773px){
+        .pin-container{column-count: 4;}
+       }
+       
 </style>
 
 </head>
@@ -30,6 +55,33 @@
         <img src="imgs/preloader.svg" style="height: 40vh" alt="">
     </div>
     <div id="app">
+        <div class="container">
+          <div class="pin-container">
+            <div class="pin-item"><a href=""><img src="imgs/pin layout/1.jpg"></a></div>
+            <div class="pin-item"><a href=""><img src="imgs/pin layout/2.jpg"></a></div>
+            <div class="pin-item"><a href=""><img src="imgs/pin layout/3.jpg"></a></div>
+            <div class="pin-item"><a href=""><img src="imgs/pin layout/4.jpg"></a></div>
+            <div class="pin-item"><a href=""><img src="imgs/pin layout/5.jpg"></a></div>
+            <div class="pin-item"><a href=""><img src="imgs/pin layout/6.jpg"></a></div>
+            <div class="pin-item"><a href=""><img src="imgs/pin layout/7.jpg"></a></div>
+            <div class="pin-item"><a href=""><img src="imgs/pin layout/8.jpg"></a></div>
+            <div class="pin-item"><a href=""><img src="imgs/pin layout/9.jpg"></a></div>
+            <div class="pin-item"><a href=""><img src="imgs/pin layout/10.jpg"></a></div>
+            <div class="pin-item"><a href=""><img src="imgs/pin layout/11.jpg"></a></div>
+            <div class="pin-item"><a href=""><img src="imgs/pin layout/12.jpg"></a></div>
+            <div class="pin-item"><a href=""><img src="imgs/pin layout/13.jpg"></a></div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
         
     </div>
     <script>
