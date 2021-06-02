@@ -8,17 +8,52 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" />
 
     <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
 .rain{
     transform: rotate(90deg);
-    animation: rainn 1s;
+    animation: rainn 1s infinite;
+    animation-fill-mode: forwards;
+
 }
 @keyframes rainn{
     from{
-        transform: translateY(0) rotate(90deg);
+        transform: translateY(-500) rotate(90deg);
     }
     to{
-        transform: translateY(500px) rotate(90deg);
+        transform: translateY(800px) rotate(90deg);
     }
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+td{
+    width: 50px;
+    height: 50px;
+}
+.tabb{position: relative; display: inline-block;}
+.blue{
+    background-color: blue;
+    right: 0;
+    animation-duration: 1s;
+    animation-name: bluee;
+}
+.red{
+    background-color: red;
+}
+
+@keyframes bluee{
+    from{transform: translateX(0px);}
+    to{transform: translateX(-150px) translateY(-150px);}
+}
+.blue, .red{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 150px;
 }
     </style>
 </head>
@@ -27,5 +62,82 @@
     <div class="container">
         <hr style="border: 4px solid black;" class="rain w-25">
     </div>
+    <div class="tabb">
+            <div class="blue"></div>
+            <div class="red"></div>
+        <table>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    
 </body>
 </html>

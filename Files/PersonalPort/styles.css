@@ -26,7 +26,7 @@ html {scroll-behavior: smooth;}
 
 .headd {
   position: sticky;
-  z-index: 200;
+  z-index: 300;
 }
 
 /* .overlay {
@@ -100,9 +100,8 @@ html {scroll-behavior: smooth;}
   background-attachment: fixed;
   background-size: contain;
 }
+
 .h-nav{
-  position: sticky !important; 
-  top: 0; 
   z-index: 2000; 
   background-color:#c4e4c4;
 }
@@ -125,7 +124,7 @@ html {scroll-behavior: smooth;}
   right: -30%;
 }
 
-.headd{top: 4.5vh;}
+.headd{top: 4vh;}
 .h-fix{height: 90vh;}
 }
 
